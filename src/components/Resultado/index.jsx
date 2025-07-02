@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './styles/App.module.css'
 
-function CalculadoraIMC() {
+function Resultado() {
 	const [peso, setPeso] = useState('')
 	const [altura, setAltura] = useState('')
 	const [imc, setImc] = useState(null)
@@ -16,9 +16,9 @@ function CalculadoraIMC() {
 	}, [peso, altura])
 
 	return (
-		<div className={styles.container}>
+		<div className={styles.container} >
 			<h1>Calculadora de IMC</h1>
-			<form>
+			<form >
 				<label>
 					Peso (kg):
 					<input type="number" value={peso} onChange={(e) => setPeso(e.target.value)} />
@@ -29,10 +29,12 @@ function CalculadoraIMC() {
 					<input type="number" value={altura} onChange={(e) => setAltura(e.target.value)} />
 				</label>
 				<br />
-				{imc && <p>Seu IMC é: {imc}</p>}
+				<div>
+					{imc && <p>Seu IMC é: {imc}</p>}
+				</div>
 			</form>
 		</div>
 	)
 }
 
-export default CalculadoraIMC
+export default Resultado;
