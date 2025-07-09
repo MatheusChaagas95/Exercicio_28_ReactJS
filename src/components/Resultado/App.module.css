@@ -1,0 +1,105 @@
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px;
+}
+
+.header {
+	margin: 10px 0 0;
+	padding: 0.5rem 1rem;
+	font-size: 5rem;
+	background-color: #f0f0f0;
+	color: #222;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	gap: 16px;
+	padding: 20px 0;
+	flex-wrap: wrap;
+}
+
+.botaoNumero {
+	flex: 1 1 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background: #f0f0f0;
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 12px 14px;
+	border-radius: 12px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.botaoNumero input {
+	margin-top: 6px;
+	background-color: #f0f0f0;
+	color: #000;
+	font-size: 14px;
+	text-align: right;
+	padding: 8px;
+	border-radius: 12px;
+	border: 1px solid #ccc;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.botoes {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.botaoCalcular,
+.botaoLimpar {
+	padding: 8px 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	font-weight: 600;
+	min-width: 140px;
+	transition: background-color 0.3s ease;
+}
+
+.botaoCalcular {
+	background-color: #4caf50;
+}
+
+.botaoCalcular:hover {
+	background-color: #45a045;
+}
+
+.botaoLimpar {
+	background-color: #f44336;
+}
+
+.botaoLimpar:hover {
+	background-color: #d7372f;
+}
+
+.resultado {
+	background-color: #f0f0f0;
+	color: #000;
+	width: 300px;
+	margin: 20px auto 0;
+	padding: 16px 24px;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 16px;
+	border: 1px solid #ccc;
+}
+
+.resultadoParagrafo {
+	margin: 8px 0 0;
+	color: #000;
+}
