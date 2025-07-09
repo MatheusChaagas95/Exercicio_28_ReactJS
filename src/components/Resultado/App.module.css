@@ -52,10 +52,9 @@
 }
 
 .botoes {
-	margin-top: 10px;
 	display: flex;
 	justify-content: center;
-	gap: 12px;
+	gap: 10px;
 	flex-wrap: wrap;
 }
 
